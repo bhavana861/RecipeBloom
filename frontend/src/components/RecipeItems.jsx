@@ -70,7 +70,7 @@ const deleteRecipe = async(id)=>{
 try{
 
 await axios.delete(
-`http://localhost:5000/recipe/${id}`,
+`https://recipebloom-1.onrender.com/recipe/${id}`,
 {
 headers:{
 authorization:"bearer "+localStorage.getItem("token")

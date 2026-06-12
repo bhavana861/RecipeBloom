@@ -81,7 +81,7 @@ const onHandleSubmit = async (e) => {
   }
 
   await axios.put(
-    `http://localhost:5000/recipe/${id}`,
+    `https://recipebloom-1.onrender.com/recipe/${id}`,
     payload,
     {
       headers: {
@@ -97,7 +97,7 @@ const onHandleSubmit = async (e) => {
     // ✅ ADD
     else {
       await axios.post(
-        "http://localhost:5000/recipe",
+        "https://recipebloom-1.onrender.com/recipe",
         formData,
         {
           headers: {

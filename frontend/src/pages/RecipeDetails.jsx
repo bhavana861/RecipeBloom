@@ -14,7 +14,7 @@ const RecipeDetails = () => {
 
   useEffect(() => {
     const fetchRecipe = async () => {
-      const res = await axios.get(`http://localhost:5000/recipe/${id}`);
+      const res = await axios.get(`https://recipebloom-1.onrender.com/recipe/${id}`);
       setRecipe(res.data);
     };
     fetchRecipe();
@@ -31,7 +31,7 @@ const editRecipe = () => {
  const deleteRecipe = async () => {
   try {
     await axios.delete(
-      `http://localhost:5000/recipe/${id}`,
+      `https://recipebloom-1.onrender.com/recipe/${id}`,
       {
         headers: {
           authorization: "bearer " + localStorage.getItem("token"),
