@@ -1,0 +1,109 @@
+.details-page{
+    width:100%;
+    min-height:100vh;
+    background:#0f0f0f;
+    position:relative;
+    font-family:Arial;
+}
+
+/* HERO IMAGE */
+.hero-image{
+    width:100%;
+    height:320px;
+    position:relative;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+/* GLASS CARD */
+.glass-card{
+    width:80%;
+    max-width:700px;
+    margin:-120px auto 40px;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    color:white;
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+.glass-card h1{
+    margin:0;
+    font-size:28px;
+}
+
+.meta{
+    margin:10px 0 20px;
+    opacity:0.8;
+}
+
+.section-title{
+    margin-top:15px;
+    font-weight:bold;
+    color:#ffd369;
+    text-align: justify;
+
+}
+.list{
+    margin:10px 0;
+    padding-left:20px;
+}
+
+.list li{
+    margin-bottom:8px;
+    line-height:1.5;
+    color:#eee;
+    font-size:15px;
+}
+span{
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #ffd369;
+    text-decoration: underline;
+}
+/* FLOATING BUTTONS */
+.floating-actions{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.floating-actions button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:white;
+    transition:0.3s;
+}
+
+.floating-actions .edit{
+    color:#1976d2;
+}
+
+.floating-actions .delete{
+    color:#e53935;
+}
+
+.floating-actions button:hover{
+    transform:scale(1.1);
+}
